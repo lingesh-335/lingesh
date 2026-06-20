@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Service Center | SRI MARUTHI MOTORS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "surface-variant": "#333536",
+                            "tertiary": "#c8c6c8",
+                            "on-surface-variant": "#e6bdba",
+                            "on-primary-fixed": "#410004",
+                            "outline": "#ac8885",
+                            "tertiary-fixed-dim": "#c8c6c8",
+                            "on-tertiary-container": "#dbd8da",
+                            "on-secondary": "#68000d",
+                            "on-surface": "#e2e2e3",
+                            "secondary-fixed-dim": "#ffb3af",
+                            "on-tertiary-fixed": "#1c1b1d",
+                            "surface-tint": "#ffb3ae",
+                            "on-tertiary-fixed-variant": "#474649",
+                            "surface-container-high": "#282a2b",
+                            "secondary-fixed": "#ffdad7",
+                            "surface-container-low": "#1a1c1d",
+                            "on-secondary-container": "#5c000a",
+                            "background": "#121415",
+                            "primary-container": "#c0001e",
+                            "tertiary-fixed": "#e5e1e4",
+                            "inverse-surface": "#e2e2e3",
+                            "on-primary-container": "#ffcdc9",
+                            "on-secondary-fixed": "#410005",
+                            "error-container": "#93000a",
+                            "on-tertiary": "#313032",
+                            "secondary-container": "#ff5355",
+                            "primary": "#ffb3ae",
+                            "surface-container-highest": "#333536",
+                            "primary-fixed": "#ffdad7",
+                            "outline-variant": "#5c3f3d",
+                            "tertiary-container": "#5f5e60",
+                            "surface-bright": "#38393a",
+                            "inverse-primary": "#c0001e",
+                            "on-primary": "#68000b",
+                            "secondary": "#ffb3af",
+                            "surface-dim": "#121415",
+                            "surface": "#121415",
+                            "on-secondary-fixed-variant": "#930017",
+                            "error": "#ffb4ab",
+                            "surface-container": "#1e2021",
+                            "surface-container-lowest": "#0c0e0f",
+                            "on-error": "#690005",
+                            "primary-fixed-dim": "#ffb3ae",
+                            "inverse-on-surface": "#2f3132",
+                            "on-error-container": "#ffdad6",
+                            "on-background": "#e2e2e3",
+                            "on-primary-fixed-variant": "#930014"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "section-gap": "120px",
+                            "gutter": "24px",
+                            "margin-mobile": "20px",
+                            "margin-desktop": "80px",
+                            "unit": "4px"
+                    },
+                    "fontFamily": {
+                            "data-label": ["JetBrains Mono"],
+                            "price-display": ["JetBrains Mono"],
+                            "display-lg-mobile": ["Bebas Neue"],
+                            "display-lg": ["Bebas Neue"],
+                            "body-md": ["Inter"],
+                            "headline-xl": ["Bebas Neue"],
+                            "headline-md": ["Bebas Neue"],
+                            "body-lg": ["Inter"],
+                            "headline-lg": ["Bebas Neue"]
+                    },
+                    "fontSize": {
+                            "data-label": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                            "price-display": ["20px", { "lineHeight": "24px", "fontWeight": "600" }],
+                            "display-lg-mobile": ["64px", { "lineHeight": "60px", "fontWeight": "400" }],
+                            "display-lg": ["96px", { "lineHeight": "96px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                            "headline-xl": ["60px", { "lineHeight": "60px", "letterSpacing": "0.03em", "fontWeight": "400" }],
+                            "headline-md": ["32px", { "lineHeight": "32px", "fontWeight": "400" }],
+                            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                            "headline-lg": ["48px", { "lineHeight": "48px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .custom-bezier { transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+        .glass-panel { background: rgba(17, 17, 20, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(192, 0, 30, 0.2); }
+        .tech-border { border: 1px solid rgba(192, 0, 30, 0.4); }
+        .glow-hover:hover { box-shadow: 0 0 20px rgba(192, 0, 30, 0.4); }
+        .nav-blur { background: rgba(18, 20, 21, 0.8); backdrop-filter: blur(16px); }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-primary/40 shadow-2xl shadow-black/50 transition-all cubic-bezier(0.16,1,0.3,1) duration-300">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-[1440px] mx-auto">
+<a class="font-headline-md text-headline-md text-on-surface tracking-tighter hover:text-primary transition-colors duration-300" href="#">SRI MARUTHI MOTORS</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md uppercase tracking-wider hover:bg-primary/10 hover:shadow-[0_0_15px_rgba(192,0,30,0.4)] px-3 py-1 rounded" href="#">Bikes</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md uppercase tracking-wider hover:bg-primary/10 hover:shadow-[0_0_15px_rgba(192,0,30,0.4)] px-3 py-1 rounded" href="#">Brands</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md uppercase tracking-wider hover:bg-primary/10 hover:shadow-[0_0_15px_rgba(192,0,30,0.4)] px-3 py-1 rounded" href="#">Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md uppercase tracking-wider hover:bg-primary/10 hover:shadow-[0_0_15px_rgba(192,0,30,0.4)] px-3 py-1 rounded" href="#">Finance</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md uppercase tracking-wider hover:bg-primary/10 hover:shadow-[0_0_15px_rgba(192,0,30,0.4)] px-3 py-1 rounded" href="#">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md uppercase tracking-wider hover:bg-primary/10 hover:shadow-[0_0_15px_rgba(192,0,30,0.4)] px-3 py-1 rounded" href="#">Contact</a>
+</nav>
+<button class="hidden md:block bg-primary-container text-white font-body-md font-bold uppercase px-6 py-3 rounded-DEFAULT glow-hover custom-bezier transition-all">Book Test Ride</button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-[100px]">
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex items-center px-margin-mobile md:px-margin-desktop py-section-gap overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-40" data-alt="A premium Hero MotoCorp service bay featuring a motorcycle being worked on by expert technicians. Clean, well-lit environment with modern diagnostic equipment and subtle red glowing accents. High-contrast technical aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD95IfXio8sfdwbSSLy4JG1RCnnM-SIMr5ivMJ1d9sIUlZFe64N7ezHHLa47oZ8K-3eweojneeVKnFvA8Bj_3NNXfNFiJaDaGDbrZM0gORYm8-z2thfJFK0cHrGjH2pgzPYPBYQvh4pJllJIy19AMkBtx3VjkbmJvvQBdz0aamo0i-E11lFh7JGQWisbsUaxVqGwkJgJoL70sjvPWurVBw55zGTAWV3neugaybgXvAImuA_AThmwNgpaUtevAOze6M5VliilzPTGWA')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-[1440px] mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 bg-surface-container-high border border-primary/20 px-4 py-2 rounded-full mb-8 w-max">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-data-label text-data-label text-on-surface">4.9/5 AVERAGE RATING FROM 10,000+ SERVICES</span>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface uppercase mb-6 drop-shadow-2xl">
+                        EXPERT CARE FOR<br/><span class="text-primary">EVERY RIDE</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10">Precision maintenance by Hero-trained technicians. We treat your machine with the exactness it demands.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary-container text-white font-body-md font-bold uppercase px-8 py-4 rounded-DEFAULT glow-hover custom-bezier transition-all flex items-center gap-2">
+<span>Book Service Now</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border border-outline-variant text-on-surface hover:bg-surface-container hover:border-primary font-body-md font-bold uppercase px-8 py-4 rounded-DEFAULT custom-bezier transition-all">
+                            Explore Joyride Packages
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Booking Form -->
+<section class="px-margin-mobile md:px-margin-desktop py-section-gap max-w-[1440px] mx-auto">
+<div class="mb-12 text-center md:text-left">
+<h2 class="font-headline-xl text-headline-xl text-on-surface uppercase">Book Your Service</h2>
+<div class="h-1 w-24 bg-primary-container mt-4 mb-6 md:mx-0 mx-auto"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">Secure your spot in our high-performance bay in 4 precise steps.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Form Steps Indicator -->
+<div class="lg:col-span-3 space-y-6 hidden lg:block">
+<div class="flex flex-col gap-6 relative before:absolute before:left-6 before:top-8 before:bottom-8 before:w-px before:bg-outline-variant">
+<div class="flex items-center gap-4 relative z-10">
+<div class="w-12 h-12 rounded-full bg-primary-container text-white flex items-center justify-center font-bold tech-border shadow-[0_0_15px_rgba(192,0,30,0.4)]">1</div>
+<span class="font-data-label text-data-label text-primary">VEHICLE DETAILS</span>
+</div>
+<div class="flex items-center gap-4 relative z-10 opacity-50">
+<div class="w-12 h-12 rounded-full bg-surface-container text-on-surface flex items-center justify-center font-bold border border-outline-variant">2</div>
+<span class="font-data-label text-data-label text-on-surface">SERVICE TYPE</span>
+</div>
+<div class="flex items-center gap-4 relative z-10 opacity-50">
+<div class="w-12 h-12 rounded-full bg-surface-container text-on-surface flex items-center justify-center font-bold border border-outline-variant">3</div>
+<span class="font-data-label text-data-label text-on-surface">SCHEDULE</span>
+</div>
+<div class="flex items-center gap-4 relative z-10 opacity-50">
+<div class="w-12 h-12 rounded-full bg-surface-container text-on-surface flex items-center justify-center font-bold border border-outline-variant">4</div>
+<span class="font-data-label text-data-label text-on-surface">CONTACT</span>
+</div>
+</div>
+</div>
+<!-- Form Content -->
+<div class="lg:col-span-9 bg-[#111114] tech-border p-8 md:p-12">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-8">1. VEHICLE INFORMATION</h3>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col">
+<label class="font-data-label text-data-label text-on-surface-variant mb-2">REGISTRATION NUMBER</label>
+<input class="bg-[#050505] border-0 border-b border-[#A1A1AA] text-on-surface focus:ring-0 focus:border-primary-container focus:shadow-[0_2px_10px_rgba(192,0,30,0.2)] transition-all px-0 py-3 font-body-md uppercase" placeholder="KA 01 AB 1234" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-data-label text-data-label text-on-surface-variant mb-2">MAKE &amp; MODEL</label>
+<input class="bg-[#050505] border-0 border-b border-[#A1A1AA] text-on-surface focus:ring-0 focus:border-primary-container focus:shadow-[0_2px_10px_rgba(192,0,30,0.2)] transition-all px-0 py-3 font-body-md" placeholder="e.g. Hero Xpulse 200 4V" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-data-label text-data-label text-on-surface-variant mb-2">CURRENT MILEAGE (KM)</label>
+<input class="bg-[#050505] border-0 border-b border-[#A1A1AA] text-on-surface focus:ring-0 focus:border-primary-container focus:shadow-[0_2px_10px_rgba(192,0,30,0.2)] transition-all px-0 py-3 font-body-md" placeholder="15000" type="number"/>
+</div>
+</div>
+<div class="flex justify-end pt-8">
+<button class="bg-primary-container text-white font-body-md font-bold uppercase px-8 py-4 rounded-DEFAULT glow-hover custom-bezier transition-all flex items-center gap-2" type="button">
+<span>Next Step</span>
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-section-gap pb-gutter bg-surface-container-lowest grid grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto border-t border-primary/20 transition-opacity duration-300">
+<div class="col-span-12 md:col-span-4 mb-8 md:mb-0">
+<div class="font-headline-lg text-headline-lg text-primary mb-4">SRI MARUTHI MOTORS</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-6">High-performance dealership and service center dedicated to precision engineering and expert care.</p>
+<div class="font-data-label text-data-label text-on-surface-variant">© 2024 SRI MARUTHI MOTORS. PRECISION ENGINEERED.</div>
+</div>
+<div class="col-span-6 md:col-span-2">
+<h4 class="font-data-label text-data-label text-on-surface mb-4">EXPLORE</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Bikes</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Brands</a></li>
+<li><a class="font-body-md text-body-md text-primary transition-colors" href="#">Service</a></li>
+</ul>
+</div>
+<div class="col-span-6 md:col-span-2">
+<h4 class="font-data-label text-data-label text-on-surface mb-4">COMPANY</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Finance</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">About</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="col-span-12 md:col-span-4 mt-8 md:mt-0">
+<h4 class="font-data-label text-data-label text-on-surface mb-4">LEGAL</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</footer>
+</body></html>
